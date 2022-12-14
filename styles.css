@@ -1,0 +1,96 @@
+body{
+  background-image: url(background.png);
+  background-size: 100% 100vh;
+  background-repeat: no-repeat;
+}
+img {
+  width: 30%;
+  height: 30%;
+  margin-left: 35vw;
+  margin-top: 8%;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+img {
+  animation:spin 5s linear infinite;
+}
+@keyframes glow {
+  0% {
+    color: red;
+  }
+  25% {
+    color: green;
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: purple;
+  }
+  100% {
+    color: red;
+  }
+}
+
+#glowing-text {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 50px #ff0080, 0 0 75px #ff0080;
+  font-size: 10vh;
+  animation: glow 2s infinite;
+  text-align: center;
+}
+@keyframes falling-snowflakes {
+  from { top: 0; }
+  to { top: 93%; }
+}
+.snowflake {
+  position: absolute;
+  animation: falling-snowflakes 5s linear infinite;
+}
+.snowflake:before {
+  content: '❄️';
+  position: relative;
+  animation: falling-snowflakes 5s linear infinite;
+  font-size: 2vh;
+}
+#span1{
+  margin-left: -65%;
+}
+#span2{
+  margin-left: -60%;
+}
+#span3{
+  margin-left: -55%;  
+}
+#span4{
+  margin-left: -50%;                                  
+}
+#span5{
+  margin-left: -45%;
+}
+#span6{
+  margin-left: -40%;
+}
+#span7{
+  margin-left: 8%;
+}
+#span8{
+  margin-left: 13%;
+}
+#span9{
+  margin-left: 18%;
+}
+#span10{
+  margin-left: 23%;
+}
+#span11{
+  margin-left: 28%;
+}
+#span12{
+  margin-left: 33%;
+}
